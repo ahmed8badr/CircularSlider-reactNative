@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const MenuScreen = () => {
+const Menu = () => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Menu</Text>
@@ -9,4 +9,4 @@ const MenuScreen = () => {
   );
 };
 
-export default MenuScreen;
+export default Menu;
