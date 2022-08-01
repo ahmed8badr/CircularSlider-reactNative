@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Image, Pressable } from 'react-native';
 import Ionic from 'react-native-vector-icons/Ionicons';
 import Slider from '@react-native-community/slider';
 import { useFonts } from 'expo-font';
+import { Toast } from 'react-native-toast-message/lib/src/Toast';
 
 const Home = () => {
   let [fontLoaded] = useFonts({
@@ -49,6 +50,10 @@ const Home = () => {
               if (value > 1500) {
                 setColor('#FFDA69');
                 setRange(1500);
+                Toast.show({
+                  type: 'lenmeToast',
+                  text1: 'Maximum amount is $200.',
+                });
               } else {
                 setColor('#F5F4F8');
                 setRange(parseInt(value));
