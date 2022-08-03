@@ -52,7 +52,7 @@ const Home = () => {
                 setRange(1500);
                 Toast.show({
                   type: 'lenmeToast',
-                  text1: 'Maximum amount is $200.',
+                  text1: 'Maximum amount is $1500.',
                 });
               } else {
                 setColor('#F5F4F8');
